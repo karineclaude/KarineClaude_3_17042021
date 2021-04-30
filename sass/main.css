@@ -1,12 +1,19 @@
 body {
-  max-width: 767px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1250px;
+  margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   color: rgba(5, 4, 4, 0.842);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
 }
 
-#restaurants {
+.index-header {
+  padding: 20px 0;
+  background: #353535;
+}
+
+.restaurants {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
