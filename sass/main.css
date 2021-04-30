@@ -1,0 +1,21 @@
+body {
+  max-width: 767px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(5, 4, 4, 0.842);
+}
+
+#restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  background-color: #f6f6f6;
+}
+/*# sourceMappingURL=main.css.map */

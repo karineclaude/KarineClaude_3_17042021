@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": "AKAA,AAAA,IAAI,CAAA;EACA,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,oBAAoB;EACjC,KAAK,EJLO,oBAAoB;CIMnC;;AIND,AAAA,YAAY,CAAA;EACR,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,YAAY,EAAE,IAAI;EAClB,cAAc,EAAE,IAAI;EACpB,gBAAgB,ERDb,OAAO;CQEb",
+    "sources": [
+        "main.scss",
+        "Utils/_variables.scss",
+        "Utils/_functions.scss",
+        "Utils/_mixins.scss",
+        "Utils/_extensions.scss",
+        "Base/_base.scss",
+        "Base/_typography.scss",
+        "Components/_buttons.scss",
+        "Layout/_header.scss",
+        "Layout/_container.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

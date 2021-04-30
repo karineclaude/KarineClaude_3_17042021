@@ -1,13 +1,9 @@
-
-.restaurant-card {
-    display:flex;
-    flex-direction: column;
-    border-radius: 20px;
-    width:100%;
-    box-shadow: 0 0 6px 3px #b1b1b14b;
-    margin-bottom: 20px;
-}
-
-footer {
-    background-color: darkgray;
-}
+@import "./Utils/variables";
+@import "./Utils/functions";
+@import "./Utils/mixins";
+@import "./Utils/extensions";
+@import "./Base/base";
+@import "./Base/typography";
+@import "./Components/buttons";
+@import "./Layout/header";
+@import "./Layout/container";
