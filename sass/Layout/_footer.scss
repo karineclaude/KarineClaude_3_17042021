@@ -1,9 +1,18 @@
 footer {
-    background-color: $footer;
-    color: white;
+    background-color: $background-footer;
     
-    a {
+    
+    ul {
         list-style-type: none;
-        text-decoration: none;
+       
     }
+    a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        color: #9356DC;
+    }
+    
+    }
+    
 }

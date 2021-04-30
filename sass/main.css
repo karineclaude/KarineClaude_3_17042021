@@ -8,9 +8,72 @@ body {
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
+
 .index-header {
   padding: 20px 0;
-  background: #353535;
+  background: #f6f6f6;
+}
+
+.btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.steps-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 767px) {
+  .steps-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.choice-restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33%;
+  border: 2px #d9d9d9 solid;
+  margin-right: 20px;
+  border-radius: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background: #f6f6f6;
+}
+
+.choice-restaurant:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #f5edff;
+  border: none;
+  border: 2px solid;
+}
+
+.restaurants-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .restaurants {
@@ -24,5 +87,36 @@ body {
   padding-left: 20px;
   padding-bottom: 20px;
   background-color: #f6f6f6;
+}
+
+.restaurant-card {
+  background: white;
+  width: 20%;
+  margin: 5px;
+}
+
+.restaurant-card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  height: 170px;
+}
+
+footer {
+  background-color: #353535;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: #9356DC;
 }
 /*# sourceMappingURL=main.css.map */
