@@ -5,18 +5,21 @@
 .number {
     color: #ffffff;
     background-color: #9356dc;
-    padding: 10px;
+    padding: 05px 10px;
     border-radius: 30px;
+    margin-left: -20px;
 
 }
 
 
 .choice-restaurant {
     display:flex;
-    width: 33%;
+    justify-content:flex-start;  
+    align-items: center;
+  width: 33%;
     margin: 20px;
     border-radius: 30px;
-    align-items: center;
+    
     cursor: pointer;
     background: $fond;
 

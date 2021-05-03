@@ -83,20 +83,24 @@ input[type=text] {
 .number {
   color: #ffffff;
   background-color: #9356dc;
-  padding: 10px;
+  padding: 05px 10px;
   border-radius: 30px;
+  margin-left: -20px;
 }
 
 .choice-restaurant {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 33%;
-  margin: 20px;
-  border-radius: 30px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 33%;
+  margin: 20px;
+  border-radius: 30px;
   cursor: pointer;
   background: #f6f6f6;
 }
