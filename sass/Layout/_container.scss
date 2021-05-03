@@ -1,11 +1,12 @@
-.steps-list {
-    display:flex;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-
-    @media only screen and (max-width: 767px) {
-        flex-direction: column;
-    }
+.working {
+    padding-left: 20px;
+    
+}
+.number {
+    color: #ffffff;
+    background-color: #9356dc;
+    padding: 10px;
+    border-radius: 30px;
 
 }
 
@@ -13,26 +14,35 @@
 .choice-restaurant {
     display:flex;
     width: 33%;
-    border: 2px #d9d9d9 solid;
-    margin-right: 20px;
+    margin: 20px;
     border-radius: 30px;
     align-items: center;
     cursor: pointer;
     background: $fond;
 
     &:hover {
-        transition: 0.5s;
         background: #f5edff ;
-        border: none;
-        border: 2px solid;
+    }
+
+    @media only screen and (max-width: 767px) {
+        width: 90%;
     }
 
 }
 
-.restaurants-list {
+
+
+.steps-list {
     display:flex;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: nowrap;
+    margin: 20px 0;
+
+    @media only screen and (max-width: 767px) {
+        flex-direction: column;
+
+    }
+
 }
 
 .restaurants{
@@ -43,9 +53,19 @@
     background-color: $fond; 
 }
 
+.restaurants-list {
+    display:flex;
+    align-items: center;
+
+    @media only screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+
 .restaurant-card {
     background: white;
-    width: 20%;
+    width: 25%;
     margin: 5px;
 
     img {
@@ -55,5 +75,8 @@
         height: 170px ;
     }
 
+    @media only screen and (max-width: 767px) {
+        width: 90%;
+    }
     
 }

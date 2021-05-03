@@ -1,8 +1,43 @@
-.index-header {
-    padding: 20px 0;
-    background: $fond;
+
+
+header {
+padding-top:20px;
 }
 
-.btn {
-    background: $btn-background;
+.index-header {
+    padding: 50px 0;
+    background: $fond;
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+}
+
+
+
+
+.logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.city-search {
+height:50px;
+width: 100%;
+margin: auto;
+text-align:center;
+background-color: #eaeaea;
+}
+
+
+
+input[type=text]{
+    background-color: transparent ;
+    border: none;
+    height: 100%;
+    padding: 8px 12px;
+    font-size: 18px;
+    margin: auto;
+    
 }

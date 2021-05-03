@@ -10,3 +10,20 @@ body{
 a {
     text-decoration: none;
 }
+.btn {
+    background: $btn-background;
+    color: white;
+    border: none;
+    text-align: center;
+    width: 50%;
+    padding: 15px 0px ;
+    cursor: pointer;
+    flex: 1 1 100%;
+    border-radius: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
