@@ -8,32 +8,41 @@
     padding: 05px 10px;
     border-radius: 30px;
     margin-left: -20px;
-
 }
 
 
 .choice-restaurant {
     display:flex;
-    justify-content:flex-start;  
+    justify-content:flex-start;
     align-items: center;
-  width: 33%;
+    width: 33%;
     margin: 20px;
-    border-radius: 30px;
-    
+    border-radius: 20px;
     cursor: pointer;
     background: $fond;
+    height:60px;
 
-    &:hover {
-        background: #f5edff ;
+        &:hover {
+        background: #f5edff;
+
+        .fas {
+            color: #9356dc;
+        }
     }
-
+ 
     @media only screen and (max-width: 767px) {
         width: 90%;
     }
 
+    @include shadow;
 }
 
 
+.choice-restaurant .fas {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: grey;
+}
 
 .steps-list {
     display:flex;
@@ -58,18 +67,21 @@
 
 .restaurants-list {
     display:flex;
-    align-items: center;
 
     @media only screen and (max-width: 767px) {
         flex-direction: column;
+        width: 100%;
+
     }
 }
 
 
 .restaurant-card {
+    position: relative;
     background: white;
     width: 25%;
     margin: 5px;
+    border-radius: 20px;
 
     img {
         object-fit: cover;
@@ -80,6 +92,47 @@
 
     @media only screen and (max-width: 767px) {
         width: 90%;
+        margin-top: 20px;
     }
-    
+    @include shadow;
+}
+
+.restaurant-card-info {
+    position: relative;
+    left: 5px;
+    padding: 10px;
+
+    p {
+        font-weight: 200;
+        margin-top:0;
+    }
+
+
+.fa-heart, #full-heart {
+    position:absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+}
+#full-heart {
+    color:red;
+}
+
+}
+
+.new {
+    position: absolute;
+    color: #008766;
+    background-color: #99e2d0;
+    top: 0;
+    right :20px;
+    padding: 10px 15px;
+
+}
+
+.btn {
+    @media only screen and (max-width: 767px) {
+        width: 70%;
+    }
+
 }

@@ -7,26 +7,30 @@
     <title>Oh my Food</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d6811fe93e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="sass/main.css">
     </head>
 <body>
     <!-- Header -->
     <header>
-            <a href="#" class="logo">
-                <img src="public/images/logo/ohmyfood.png" alt="logo Oh my Food" />
-            </a>     
+        <div class="logo">
+            <a href="#">
+                <h1>ohmyfood</h1>
+            </a>
+        </div>  
+            <div class="city-search">
+                <form method="post" action="traitement.php">
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" placeholder="Paris, Bellevie">
+                    </p>
+                </form>
+            </div>
     </header>
-        <div class="city-search">
-            <form method="post" action="traitement.php">
-                <p>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input type="text" placeholder="Paris, Bellevie">
-                </p>
-            </form>
-        </div>
+       
         <div class="index-header">
-            <h1>Réservez le menu qui vous convient</h1>
+            <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             </h1>
             <button class="btn" type="button">
@@ -38,25 +42,28 @@
     <section class="working">
         <h2>Fonctionnement</h2>
         <div class="steps-list"> 
-            <div class="choice-restaurant"> 
-                <span class="number">1</span>
-                <i class="fas fas fa-mobile-alt"></i>
-                <p>Choisissez un restaurant</p>
-            </div>
-            <div class="choice-restaurant"> 
-                <span class="number">2</span>
-                <i class="fas fa-list-ul"></i>
-                <p>Composez votre menu</p>
-            </div>
-            <div class="choice-restaurant"> 
-                <span class="number">3</span>
-                <i class="fas fa-store"></i>
-                <p>Dégustez au restaurant</p>
-            </div>
-
+            <a href="2"  class="choice-restaurant"> 
+                    <span class="number">1</span>
+                    <i class="fas fas fa-mobile-alt"></i>
+                    <p>Choisissez un restaurant</p>
+                    
+            </a>
+            <a href="#" class="choice-restaurant"> 
+                
+                    <span class="number">2</span>
+                    <i class="fas fa-list-ul"></i>
+                    <p>Composez votre menu</p>
+              
+            </a>
+            <a href="#"  class="choice-restaurant"> 
+                
+                    <span class="number">3</span>
+                    <i class="fas fa-store"></i>
+                    <p>Dégustez au restaurant</p>
+            </a>
+            
         </div>
         
-    
     </section>
 
     <section class="restaurants">
@@ -66,12 +73,14 @@
             <div class="restaurant-card">
                 <a href="#" class="restaurant-card-content">
                     <img src="public/images/restaurants/la-palette-du-gout.jpg" alt="la-palette-du-gout" />
+                    <p class="new">
+                        Nouveau
+                    </p>
                     <div class="restaurant-card-info">
                         <h3>La palette du goût</h3>
                         <p>Ménilmontant</p>
-        
-                        <div class="like">
-                        </div>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart" id="full-heart"></i>
                     </div>
                 </a>
             </div>
@@ -79,51 +88,47 @@
             <div class="restaurant-card">
                 <a href="#" class="restaurant-card-content">
                     <img src="public/images/restaurants/la-note-enchantee.jpg" alt="la-note-enchantee" />
+                    <p class="new">
+                        Nouveau
+                    </p>
                     <div class="restaurant-card-info">
                         <h3>La note enchantée</h3>
                         <p>Charonne</p>
-        
-                        <div class="like">
-   
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart" id="full-heart"></i>
                     </div>
-                </div>
-            </a>
+                </a>
             </div>
 
             <div class="restaurant-card">
-            <a href="#" class="restaurant-card-content">
-                <img src="public/images/restaurants/a-la-francaise.jpg" alt="a-la-francaise" />
-                <div class="restaurant-card-info">
-                    <h3>A la française</h3>
-                    <p>Cité Rouge</p>
-        
-                    <div class="like">
-   
+                <a href="#" class="restaurant-card-content">
+                    <img src="public/images/restaurants/a-la-francaise.jpg" alt="a-la-francaise" />
+                    <div class="restaurant-card-info">
+                        <h3>A la française</h3>
+                        <p>Cité Rouge</p>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart" id="full-heart"></i>
                     </div>
-                </div>
-            </a>
+                </a>
             </div>
 
             <div class="restaurant-card">
-            <a href="#" class="restaurant-card-content">
-                <img src="public/images/restaurants/delice-des-sens.jpg" alt="délice-des-sens" />
-                <div class="restaurant-card-info">
-                    <h3>Le délice des sens </h3>
-                    <p>Folie-Méricourt</p>
-        
-                    <div class="like">
-   
+                <a href="#" class="restaurant-card-content">
+                    <img src="public/images/restaurants/delice-des-sens.jpg" alt="délice-des-sens" />
+                    <div class="restaurant-card-info">
+                        <h3>Le délice des sens </h3>
+                        <p>Folie-Méricourt</p>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart" id="full-heart"></i>
                     </div>
-                </div>
-            </a>
+                </a>
             </div>
+
         </div>
     </section>
     
     <footer>
-        <a href="#">
-            <img src="public/images/logo/ohmyfood@2x.svg">
-        </a>
+            <a href="#" class="logo-footer">ohmyfood</a>
         <ul>
             <li>
                 <a href="#proposer-restaurant"> <i class="fas fa-utensils"></i>Proposer un restaurant</a>

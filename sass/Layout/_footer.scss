@@ -1,18 +1,49 @@
 footer {
     background-color: $background-footer;
-    
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    padding: 30px;
+    text-align:center;
+
     
     ul {
         list-style-type: none;
-       
+        text-align: center;
+        @media only screen and (max-width: 767px) {
+            text-align: left;
+            padding-left: 0;
+        }
     }
+
+
+
     a {
     text-decoration: none;
     color: white;
-    &:hover {
+    text-align: center;
+
+        &:hover {
         color: #9356DC;
+        }
+
+        @media only screen and (max-width: 767px) {
+            text-align: left;
+           
+        }
+
     }
-    
+
+    li {
+        padding-top:10px;
+    }
+
+    .fas, .far{
+        margin-right: 15px; 
     }
     
 }
+
+
+
+   

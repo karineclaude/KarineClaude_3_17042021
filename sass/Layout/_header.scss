@@ -1,43 +1,88 @@
-
-
 header {
-padding-top:20px;
-}
-
-.index-header {
-    padding: 50px 0;
-    background: $fond;
     display: flex;
-    align-items: center;
-   flex-direction: column;
-}
+    @include shadow;
 
+    @media only screen and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
 
+    }
+   
+    .logo {
+        margin-top: 0;
+        font-weight: 300;
 
-
-.logo img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 1px 4px red;
+            padding: 5px 46px;
+         }
+         /* border-bottom: 2px solid #f4f4f4; */
+         
+        }
+    
 }
 
 .city-search {
-height:50px;
-width: 100%;
-margin: auto;
-text-align:center;
-background-color: #eaeaea;
-}
+    display: flex;
+    height:50px;
+    width: 50%;
+    margin: auto;
+    text-align:center;
+    background-color: #eaeaea;
+    border-radius: 40px;
 
+    @media only screen and (max-width: 767px) {
+        width:100%;
+        border-radius: 0;
+        justify-content: center;
+}
+  
+}
 
 
 input[type=text]{
     background-color: transparent ;
     border: none;
     height: 100%;
-    padding: 8px 12px;
+    padding: 0px 12px;
     font-size: 18px;
     margin: auto;
-    
+    border-radius: 20px;
+    width: 70%;
+
+    &:focus {
+        outline:none;
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding: 0%;
+        text-align: center;
+    }
 }
+
+.index-header {
+    padding: 30px 10px;
+    background: $fond;
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+   text-align: center;
+
+   p {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    padding: 0 15px;
+    font-size: 18px;
+   }
+
+   H2 {
+    margin: 0 20px;
+    font-size: 30px;
+   }
+}
+
+

@@ -4,8 +4,9 @@
   "description": "3ème Projet Open Classrooms  Dynamisez une page web avec des animations CSS",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass":"sass --watch ./sass/main.scss -o ./public/css/style.css"
   },
+
   
   "author": "",
   "license": "ISC"
