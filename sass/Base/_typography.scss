@@ -1,8 +1,17 @@
-h1, .titre-restaurant {
+h1 {
     font-family :'Shrikhand', sans-serif;
     font-size: 30px;
     left: 10px;
     width: 100%;
+}
+
+.titre-restaurant {
+    font-family :'Shrikhand', sans-serif;
+    font-size: 30px;
+    left: 10px;
+    width: 100%;
+    display: flex;
+    position: relative;
 }
 
 h2 {
