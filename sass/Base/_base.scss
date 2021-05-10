@@ -1,8 +1,9 @@
 body{
-    max-width: 1250px;
+    max-width: 1440px;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     display: block;
+    background-color: $fond;
 }
 
 a {
@@ -15,15 +16,19 @@ a {
         color: black;
     }
 }
+
+p {
+    margin: 0;
+}
+
 .btn {
     background: $btn-background;
     color: white;
     border: none;
     text-align: center;
-    width: 50%;
+    width: 30%;
     padding: 15px 0px ;
     cursor: pointer;
-    flex: 1 1 100%;
     border-radius: 30px;
     font-size: 16px;
     text-decoration: none;

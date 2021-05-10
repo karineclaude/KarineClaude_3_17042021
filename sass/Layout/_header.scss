@@ -1,12 +1,12 @@
 header {
     display: flex;
-    @include shadow;
-
+    background-color: white;
+   
     @media only screen and (max-width: 767px) {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-
+        @include shadow;
     }
    
     .logo {
@@ -16,8 +16,7 @@ header {
         @media only screen and (max-width: 767px) {
             width: 100%;
             text-align: center;
-            box-shadow: 0 1px 4px red;
-            padding: 5px 46px;
+            box-shadow: 0 1px 4px rgb(31, 29, 29);
          }
          /* border-bottom: 2px solid #f4f4f4; */
          
@@ -44,7 +43,7 @@ header {
 
 
 input[type=text]{
-    background-color: transparent ;
+    background-color: transparent;
     border: none;
     height: 100%;
     padding: 0px 12px;
@@ -58,7 +57,7 @@ input[type=text]{
     }
 
     @media only screen and (max-width: 767px) {
-        padding: 0%;
+        padding: 10px;
         text-align: center;
     }
 }

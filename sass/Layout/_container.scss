@@ -1,5 +1,6 @@
 .working {
     padding-left: 20px;
+    background-color:white;
     
 }
 .number {
@@ -135,4 +136,103 @@
         width: 70%;
     }
 
+}
+
+.menu-card {
+    background: #fff;
+    @include shadow;
+    @include coin-arrondis;
+}
+
+.title-menu {
+    text-transform: uppercase;
+    font-size: 24px;
+    position:relative;
+
+    &:after {
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: $third-color;
+        position: absolute;
+        left: 0;
+        margin-top: 40px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        left: 10px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-radius: 20px 20px 0 0;
+
+    .btn {
+        margin: 50px auto;
+        justify-content: center;
+    }
+
+    @media only screen and (max-width: 767px) {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+   
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: row;
+    width: 33%;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: 767px) {
+        width: 100%;
+        flex-direction: row;
+    }
+}
+
+.menu-card {
+ width: 100%;
+ margin: 20px 10px;
+ padding: 10px;
+
+ @media only screen and (max-width: 767px) {
+    margin: 10px;
+}
+}
+
+
+.photo-menu {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+
+    
+}
+
+.menu-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 94%;
+}
+
+.menu-price { 
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
