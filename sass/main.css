@@ -35,10 +35,6 @@ p {
   border-radius: 30px;
   font-size: 16px;
   text-decoration: none;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
 }
 
 section {
@@ -114,6 +110,9 @@ header .logo {
   text-align: center;
   background-color: #eaeaea;
   border-radius: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (max-width: 767px) {
@@ -403,6 +402,9 @@ input[type=text]:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 0;
+    padding: 0;
+    border-radius: 20px 20px 0 0;
   }
 }
 
