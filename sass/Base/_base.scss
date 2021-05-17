@@ -32,9 +32,11 @@ p {
     border-radius: 30px;
     font-size: 16px;
     text-decoration: none;
-   
 
-    
+    &:hover {
+        background:linear-gradient(#f77dd4, #ab65fa);
+    }
+
 }
 
 section {

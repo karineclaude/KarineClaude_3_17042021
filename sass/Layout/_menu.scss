@@ -42,6 +42,7 @@ font-size: 20px;
 
 
 .photo-menu {
+   
     padding-top: 0px;
     padding-bottom: 0px;
     img {
@@ -54,7 +55,7 @@ font-size: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 33%;
+    width: 30%;
     margin-top: 20px;
     padding: 0 10px;
 
@@ -95,17 +96,25 @@ font-size: 20px;
     background: #fff;
     @include shadow;
     border-radius:10px;
+    margin: 20px 0px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+ 
 
-    @media only screen and (max-width: 767px) {
+    &:hover {
+        animation:s cale-x 200ms 0ms linear both;
+}
+   /* @media only screen and (max-width: 767px) *//*{
         margin: 10px;
-    }
+    }*/
 }
 
 .menu-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 94%;
+    width: 70%;
 }
 
 .menu-price { 
@@ -125,3 +134,17 @@ font-size: 20px;
  white-space: nowrap;
 }
 
+
+.menu-selection {
+    background:#99e2d0;
+    border-radius: 0 10px 10px 0;
+    right:0px;
+    top: 0px;
+    width: 50px;
+    height:58px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .5s;
+    transform-origin: right;
+}
