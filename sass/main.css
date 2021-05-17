@@ -456,6 +456,8 @@ input[type=text]:focus {
   background: linear-gradient(#ff79da, #9356dc);
   opacity: 1;
   z-index: 999;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .new {
@@ -709,7 +711,7 @@ footer .fas, footer .far {
 }
 
 .menu-selection {
-  visibility: hidden;
+  /* display:none;*/
 }
 
 .menu-card:hover .menu-price {
@@ -748,8 +750,8 @@ footer .fas, footer .far {
           animation-iteration-count: 1;
   -webkit-transition-duration: .5s;
           transition-duration: .5s;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+  -webkit-transform-origin: right;
+          transform-origin: right;
   -webkit-animation: plate-choice ease 0.3s;
 }
 

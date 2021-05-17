@@ -134,7 +134,8 @@ font-size: 20px;
 
 
 .menu-selection {
-    visibility:hidden;
+
+   /* display:none;*/
 }
 
 .menu-card:hover .menu-price  {
@@ -163,7 +164,7 @@ font-size: 20px;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     transition-duration: .5s;
-    transform-origin: 50% 50%;
+    transform-origin: right;
     -webkit-animation: plate-choice ease 0.3s;
 }
 
