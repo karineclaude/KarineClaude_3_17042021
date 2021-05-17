@@ -459,7 +459,7 @@ input[type=text]:focus {
   opacity: 1;
   z-index: 999;
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .new {
@@ -525,6 +525,13 @@ footer li {
 
 footer .fas, footer .far {
   margin-right: 15px;
+}
+
+.menu-card:hover .btn-circle {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 5s;
+  transition: 5s;
 }
 
 .header-menu {
@@ -657,25 +664,23 @@ footer .fas, footer .far {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 95%;
   /*padding: 10px;*/
   background: #fff;
   -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
           box-shadow: 0 5px 15px 0 #c3c3c3;
   border-radius: 10px;
-  margin: 20px 0px;
+  margin: 20px 5px;
   padding: 10px;
   cursor: pointer;
   position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   /* @media only screen and (max-width: 767px) */
   /*{
         margin: 10px;
     }*/
-}
-
-.menu-card:hover {
-  -webkit-animation: s cale-x 200ms 0ms linear both;
-          animation: s cale-x 200ms 0ms linear both;
 }
 
 .menu-text {
@@ -713,7 +718,7 @@ footer .fas, footer .far {
 }
 
 .menu-selection {
-  /* display:none;*/
+  display: none;
 }
 
 .menu-card:hover .menu-price {
@@ -723,7 +728,7 @@ footer .fas, footer .far {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   min-width: 50px;
-  right: 20px;
+  margin-right: 20px;
   -webkit-animation: menu-confirmation ease 0.3s;
 }
 
