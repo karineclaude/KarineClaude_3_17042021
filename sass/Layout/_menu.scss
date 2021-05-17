@@ -100,7 +100,6 @@ font-size: 20px;
     padding: 10px;
     cursor: pointer;
     position: relative;
- 
 
     &:hover {
         animation:s cale-x 200ms 0ms linear both;
@@ -119,12 +118,11 @@ font-size: 20px;
 
 .menu-price { 
     display: flex;
-    justify-content: flex-end;
+   /* justify-content: space-between;*/
     align-items: flex-end;
     font-weight: 700;
     width: 10%;
-    padding: 0px 5%;
-    text-align: center;
+    padding: 0px 5px;
 }
 
 .menu-description {
@@ -136,7 +134,23 @@ font-size: 20px;
 
 
 .menu-selection {
-    background:#99e2d0;
+    visibility:hidden;
+}
+
+.menu-card:hover .menu-price  {
+    animation: menu-confirmation ease 0.3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    min-width: 50px;
+    right:20px;
+    -webkit-animation: menu-confirmation ease 0.3s;
+}
+
+
+  .menu-card:hover .menu-selection  {
+    visibility: visible;
+    position: absolute;
+    background:$third-color;
     border-radius: 0 10px 10px 0;
     right:0px;
     top: 0px;
@@ -145,6 +159,15 @@ font-size: 20px;
     display:flex;
     align-items: center;
     justify-content: center;
+    animation: plate-choice ease 0.3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
     transition-duration: .5s;
-    transform-origin: right;
+    transform-origin: 50% 50%;
+    -webkit-animation: plate-choice ease 0.3s;
+}
+
+
+.btn-circle {
+    color: #ffffff;
 }
