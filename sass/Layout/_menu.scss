@@ -1,6 +1,10 @@
 .menu-card:hover .btn-circle {
-    transform:rotate(360deg);
-    transition: 5s;
+   transition-duration: 0.5s;
+   transform:rotate(360deg);
+   -webkit-transform:rotate(360deg);
+   -moz-transform:rotate(360deg);
+   -ms-transform:rotate(360deg);
+   -o-transform:rotate(360deg);
 }
 
 
@@ -107,10 +111,12 @@ font-size: 20px;
     cursor: pointer;
     position: relative;
     justify-content: space-between;
-
-    &:hover {
-        
-}
+    animation: plate-choice ease 0.3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    transition-duration: .5s;
+    transform-origin: right;
+    -webkit-animation: plate-choice ease 0.3s;
    /* @media only screen and (max-width: 767px) *//*{
         margin: 10px;
     }*/
@@ -120,7 +126,11 @@ font-size: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 }
 
 .menu-price { 
@@ -134,15 +144,17 @@ font-size: 20px;
 
 .menu-description {
  font-weight: 200;
- overflow: hidden;
- text-overflow: ellipsis;
- white-space: nowrap;
+font-size:14px;
+margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 
 .menu-selection {
+    visibility:hidden;
 
-    display:none;
 }
 
 .menu-card:hover .menu-price  {
@@ -154,7 +166,6 @@ font-size: 20px;
     -webkit-animation: menu-confirmation ease 0.3s;
 
 }
-
 
   .menu-card:hover .menu-selection  {
     visibility: visible;
@@ -168,12 +179,8 @@ font-size: 20px;
     display:flex;
     align-items: center;
     justify-content: center;
-    animation: plate-choice ease 0.3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    transition-duration: .5s;
-    transform-origin: right;
-    -webkit-animation: plate-choice ease 0.3s;
+    
+    
 }
 
 

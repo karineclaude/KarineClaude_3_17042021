@@ -81,46 +81,73 @@ h3 {
 
 @-webkit-keyframes menu-confirmation {
   0% {
-    -webkit-transform: translate(50px, 0);
-            transform: translate(50px, 0);
+    transform: rotate(50px, 0);
+    -webkit-transform: rotate(50px, 0);
+    -moz-transform: rotate(50px, 0);
+    -ms-transform: rotate(50px, 0);
+    -o-transform: rotate(50px, 0);
   }
   40% {
-    -webkit-transform: translate(25px, 0);
-            transform: translate(25px, 0);
+    transform: rotate(25px, 0);
+    -webkit-transform: rotate(25px, 0);
+    -moz-transform: rotate(25px, 0);
+    -ms-transform: rotate(25px, 0);
+    -o-transform: rotate(25px, 0);
   }
   70% {
-    -webkit-transform: translate(12px, 0);
-            transform: translate(12px, 0);
+    transform: rotate(12px, 0);
+    -webkit-transform: rotate(12px, 0);
+    -moz-transform: rotate(12px, 0);
+    -ms-transform: rotate(12px, 0);
+    -o-transform: rotate(12px, 0);
   }
   100% {
-    -webkit-transform: translate(1px, 0);
-            transform: translate(1px, 0);
+    transform: rotate(1px, 0);
+    -webkit-transform: rotate(1px, 0);
+    -moz-transform: rotate(1px, 0);
+    -ms-transform: rotate(1px, 0);
+    -o-transform: rotate(1px, 0);
   }
 }
 
 @keyframes menu-confirmation {
   0% {
-    -webkit-transform: translate(50px, 0);
-            transform: translate(50px, 0);
+    transform: rotate(50px, 0);
+    -webkit-transform: rotate(50px, 0);
+    -moz-transform: rotate(50px, 0);
+    -ms-transform: rotate(50px, 0);
+    -o-transform: rotate(50px, 0);
   }
   40% {
-    -webkit-transform: translate(25px, 0);
-            transform: translate(25px, 0);
+    transform: rotate(25px, 0);
+    -webkit-transform: rotate(25px, 0);
+    -moz-transform: rotate(25px, 0);
+    -ms-transform: rotate(25px, 0);
+    -o-transform: rotate(25px, 0);
   }
   70% {
-    -webkit-transform: translate(12px, 0);
-            transform: translate(12px, 0);
+    transform: rotate(12px, 0);
+    -webkit-transform: rotate(12px, 0);
+    -moz-transform: rotate(12px, 0);
+    -ms-transform: rotate(12px, 0);
+    -o-transform: rotate(12px, 0);
   }
   100% {
-    -webkit-transform: translate(1px, 0);
-            transform: translate(1px, 0);
+    transform: rotate(1px, 0);
+    -webkit-transform: rotate(1px, 0);
+    -moz-transform: rotate(1px, 0);
+    -ms-transform: rotate(1px, 0);
+    -o-transform: rotate(1px, 0);
   }
 }
 
 @-webkit-keyframes plate-choice {
   0% {
+    transform: translate(50px, 0);
     -webkit-transform: translate(50px, 0);
-            transform: translate(50px, 0);
+    -moz-transform: translate(50px, 0);
+    -ms-transform: translate(50px, 0);
+    -o-transform: translate(50px, 0);
   }
   20% {
     -webkit-transform: translate(30px, 0);
@@ -146,8 +173,11 @@ h3 {
 
 @keyframes plate-choice {
   0% {
+    transform: translate(50px, 0);
     -webkit-transform: translate(50px, 0);
-            transform: translate(50px, 0);
+    -moz-transform: translate(50px, 0);
+    -ms-transform: translate(50px, 0);
+    -o-transform: translate(50px, 0);
   }
   20% {
     -webkit-transform: translate(30px, 0);
@@ -528,10 +558,13 @@ footer .fas, footer .far {
 }
 
 .menu-card:hover .btn-circle {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: 5s;
-  transition: 5s;
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
 }
 
 .header-menu {
@@ -677,6 +710,16 @@ footer .fas, footer .far {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  animation: plate-choice ease 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation: plate-choice ease 0.3s;
   /* @media only screen and (max-width: 767px) */
   /*{
         margin: 10px;
@@ -694,7 +737,10 @@ footer .fas, footer .far {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 70%;
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu-price {
@@ -712,13 +758,15 @@ footer .fas, footer .far {
 
 .menu-description {
   font-weight: 200;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-size: 14px;
+  margin: 0;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .menu-selection {
-  display: none;
+  visibility: hidden;
 }
 
 .menu-card:hover .menu-price {
@@ -750,16 +798,6 @@ footer .fas, footer .far {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  animation: plate-choice ease 0.3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-animation: plate-choice ease 0.3s;
 }
 
 .btn-circle {
