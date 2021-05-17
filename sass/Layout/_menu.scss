@@ -133,6 +133,12 @@ font-size: 20px;
 
 }
 
+.menu-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .menu-price { 
     display: flex;
    /* justify-content: space-between;*/

@@ -743,6 +743,12 @@ footer .fas, footer .far {
   text-overflow: ellipsis;
 }
 
+.menu-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .menu-price {
   display: -webkit-box;
   display: -ms-flexbox;
