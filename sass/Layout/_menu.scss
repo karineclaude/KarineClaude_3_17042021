@@ -19,7 +19,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    border-radius: 20px 20px 0 0;
+    margin-top: -50px;
+    border-radius: 30px 30px 0 0;
+    background-color: #F6F6F6;
+    position: relative;
 
     .btn {
         margin: 50px auto;
@@ -29,10 +32,7 @@
     @media only screen and (max-width: 767px) {
         width: 100%;
         flex-direction: column;
-        margin-top: -50px;
-        border-radius: 30px 30px 0 0;
-        background-color: #F6F6F6;
-        position: relative;
+       
     }
 }
 
@@ -55,10 +55,23 @@ font-size: 20px;
    
     padding-top: 0px;
     padding-bottom: 0px;
+    
     img {
         object-fit: cover;
         width: 100%;
+        max-height: 400px;
     }  
+}
+
+
+.menu-container {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+
+    @media only screen and (max-width: 767px) {
+        flex-direction: column;
+    }
 }
 
 .menu-content {
@@ -72,8 +85,11 @@ font-size: 20px;
     @media only screen and (max-width: 767px) {
         width: 100%;
         flex-direction: row;
+        padding: 0;
     }
 }
+
+
 
 .title-menu {
     text-transform: uppercase;
@@ -106,7 +122,7 @@ font-size: 20px;
     background: #fff;
     @include shadow;
     border-radius:10px;
-    margin: 20px 5px;
+    margin: 10px 5px;
     padding: 10px;
     cursor: pointer;
     position: relative;
@@ -181,11 +197,11 @@ margin: 0;
     right:0px;
     top: 0px;
     width: 50px;
-    height:58px;
+    height:55px;
     display:flex;
     align-items: center;
     justify-content: center;
-    
+    margin: 0 auto;
     
 }
 
@@ -194,3 +210,8 @@ margin: 0;
     color: #ffffff;
 }
 
+@for $i from 0 to 9 {
+    .delai-#{$i} {
+      animation-delay:  #{$i/20}s;
+    }
+  }

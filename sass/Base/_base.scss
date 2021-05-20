@@ -1,6 +1,6 @@
 body{
-    max-width: 1440px;
-    margin: 0 auto;
+    /*max-width: 1440px;*/
+    margin: 0 ;
     font-family: 'Roboto', sans-serif;
     display: block;
     background-color: $fond;
@@ -32,6 +32,7 @@ p {
     border-radius: 30px;
     font-size: 16px;
     text-decoration: none;
+    @include shadow;
 
     &:hover {
         background:linear-gradient(#f77dd4, #ab65fa);

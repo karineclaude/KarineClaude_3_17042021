@@ -1,6 +1,6 @@
 body {
-  max-width: 1440px;
-  margin: 0 auto;
+  /*max-width: 1440px;*/
+  margin: 0;
   font-family: 'Roboto', sans-serif;
   display: block;
   background-color: #f6f6f6;
@@ -35,6 +35,8 @@ p {
   border-radius: 30px;
   font-size: 16px;
   text-decoration: none;
+  -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
+          box-shadow: 0 5px 15px 0 #c3c3c3;
 }
 
 .btn:hover {
@@ -57,12 +59,28 @@ h1 {
 .titre-restaurant {
   font-family: 'Shrikhand', sans-serif;
   font-size: 30px;
-  left: 10px;
-  width: 100%;
+  left: 5px;
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .titre-restaurant {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 h2 {
@@ -590,7 +608,10 @@ footer .fas, footer .far {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  border-radius: 20px 20px 0 0;
+  margin-top: -50px;
+  border-radius: 30px 30px 0 0;
+  background-color: #F6F6F6;
+  position: relative;
 }
 
 .menu .btn {
@@ -607,10 +628,6 @@ footer .fas, footer .far {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: -50px;
-    border-radius: 30px 30px 0 0;
-    background-color: #F6F6F6;
-    position: relative;
   }
 }
 
@@ -641,6 +658,26 @@ footer .fas, footer .far {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  max-height: 400px;
+}
+
+.menu-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .menu-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .menu-content {
@@ -665,6 +702,7 @@ footer .fas, footer .far {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding: 0;
   }
 }
 
@@ -703,7 +741,7 @@ footer .fas, footer .far {
   -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
           box-shadow: 0 5px 15px 0 #c3c3c3;
   border-radius: 10px;
-  margin: 20px 5px;
+  margin: 10px 5px;
   padding: 10px;
   cursor: pointer;
   position: relative;
@@ -794,7 +832,7 @@ footer .fas, footer .far {
   right: 0px;
   top: 0px;
   width: 50px;
-  height: 58px;
+  height: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -804,9 +842,55 @@ footer .fas, footer .far {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
 }
 
 .btn-circle {
   color: #ffffff;
+}
+
+.delai-0 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.delai-1 {
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
+}
+
+.delai-2 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.delai-3 {
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+
+.delai-4 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.delai-5 {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.delai-6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.delai-7 {
+  -webkit-animation-delay: 0.35s;
+          animation-delay: 0.35s;
+}
+
+.delai-8 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 /*# sourceMappingURL=main.css.map */

@@ -8,10 +8,18 @@ h1 {
 .titre-restaurant {
     font-family :'Shrikhand', sans-serif;
     font-size: 30px;
-    left: 10px;
-    width: 100%;
+    left: 5px;
+    width: 95%;
     display: flex;
     position: relative;
+    justify-content:center;
+
+    @media only screen and (max-width: 767px) {
+        width: 100%;
+        flex-direction: column;
+        justify-content:space-between;
+       
+    }
 }
 
 h2 {
