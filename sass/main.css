@@ -219,6 +219,34 @@ h3 {
   }
 }
 
+@-webkit-keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,6 +358,41 @@ input[type=text]:focus {
 .index-header H2 {
   margin: 0 20px;
   font-size: 30px;
+}
+
+.loading {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-animation: loader 0.01s;
+          animation: loader 0.01s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: conic-gradient(#FF79DA 10%, #9356dc);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: spin 1.5s infinite linear;
+  -webkit-animation: spin 1.5s infinite linear;
 }
 
 .working {
@@ -693,6 +756,7 @@ footer .fas, footer .far {
   width: 30%;
   margin-top: 20px;
   padding: 0 10px;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 767px) {
@@ -762,6 +826,7 @@ footer .fas, footer .far {
   /*{
         margin: 10px;
     }*/
+  overflow: hidden;
 }
 
 .menu-text {

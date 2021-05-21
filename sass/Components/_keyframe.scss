@@ -59,3 +59,11 @@
       transform: translate(1px, 0);
     }
   }
+
+  @keyframes loader {
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+  } 
+  @keyframes spin {to{transform: rotate(1turn)}}
