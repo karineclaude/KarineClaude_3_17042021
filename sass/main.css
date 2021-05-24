@@ -92,9 +92,23 @@ h3 {
   margin-top: 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  h3 {
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
 .logo-footer {
   font-family: 'Shrikhand', sans-serif;
   font-size: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  p {
+    font-size: 12px;
+    margin: 0;
+  }
 }
 
 @-webkit-keyframes menu-confirmation {
@@ -480,6 +494,12 @@ input[type=text]:focus {
   padding-left: 20px;
   padding-bottom: 20px;
   background-color: #f6f6f6;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .restaurants {
+    padding-left: 10px;
+  }
 }
 
 .restaurants-list {
