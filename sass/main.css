@@ -111,7 +111,7 @@ h3 {
   }
 }
 
-@-webkit-keyframes mmenu-selection {
+@-webkit-keyframes menu-selection {
   0% {
     -webkit-transform: translate(50px, 0);
             transform: translate(50px, 0);
@@ -138,7 +138,7 @@ h3 {
   }
 }
 
-@keyframes mmenu-selection {
+@keyframes menu-selection {
   0% {
     -webkit-transform: translate(50px, 0);
             transform: translate(50px, 0);
@@ -934,13 +934,11 @@ footer .fas, footer .far {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  -webkit-animation: menu-selection ease-in 2s;
-          animation: menu-selection ease-in 2s;
+  animation: menu-selection 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-transform-origin: right;
-          transform-origin: right;
   overflow: hidden;
+  -webkit-animation: menu-selection 0.5s;
 }
 
 .menu-card:hover .btn-circle {

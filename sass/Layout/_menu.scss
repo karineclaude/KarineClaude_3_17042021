@@ -194,10 +194,10 @@ margin: 0;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    animation: menu-selection ease-in 2s;
+    animation: menu-selection 0.5s;
     animation-fill-mode:forwards;
-    transform-origin: right;
     overflow:hidden;
+    -webkit-animation: menu-selection 0.5s;
 }
 
 
