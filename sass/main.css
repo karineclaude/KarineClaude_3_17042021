@@ -111,6 +111,60 @@ h3 {
   }
 }
 
+@-webkit-keyframes mmenu-selection {
+  0% {
+    -webkit-transform: translate(50px, 0);
+            transform: translate(50px, 0);
+  }
+  20% {
+    -webkit-transform: translate(30px, 0);
+            transform: translate(30px, 0);
+  }
+  40% {
+    -webkit-transform: translate(20px, 0);
+            transform: translate(20px, 0);
+  }
+  60% {
+    -webkit-transform: translate(15px, 0);
+            transform: translate(15px, 0);
+  }
+  80% {
+    -webkit-transform: translate(7px, 0);
+            transform: translate(7px, 0);
+  }
+  100% {
+    -webkit-transform: translate(1px, 0);
+            transform: translate(1px, 0);
+  }
+}
+
+@keyframes mmenu-selection {
+  0% {
+    -webkit-transform: translate(50px, 0);
+            transform: translate(50px, 0);
+  }
+  20% {
+    -webkit-transform: translate(30px, 0);
+            transform: translate(30px, 0);
+  }
+  40% {
+    -webkit-transform: translate(20px, 0);
+            transform: translate(20px, 0);
+  }
+  60% {
+    -webkit-transform: translate(15px, 0);
+            transform: translate(15px, 0);
+  }
+  80% {
+    -webkit-transform: translate(7px, 0);
+            transform: translate(7px, 0);
+  }
+  100% {
+    -webkit-transform: translate(1px, 0);
+            transform: translate(1px, 0);
+  }
+}
+
 @-webkit-keyframes menu-confirmation {
   0% {
     transform: rotate(50px, 0);
@@ -174,62 +228,24 @@ h3 {
 }
 
 @-webkit-keyframes plate-choice {
-  0% {
-    transform: translate(50px, 0);
-    -webkit-transform: translate(50px, 0);
-    -moz-transform: translate(50px, 0);
-    -ms-transform: translate(50px, 0);
-    -o-transform: translate(50px, 0);
+  from {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
   }
-  20% {
-    -webkit-transform: translate(30px, 0);
-            transform: translate(30px, 0);
-  }
-  40% {
-    -webkit-transform: translate(20px, 0);
-            transform: translate(20px, 0);
-  }
-  60% {
-    -webkit-transform: translate(15px, 0);
-            transform: translate(15px, 0);
-  }
-  80% {
-    -webkit-transform: translate(7px, 0);
-            transform: translate(7px, 0);
-  }
-  100% {
-    -webkit-transform: translate(1px, 0);
-            transform: translate(1px, 0);
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes plate-choice {
-  0% {
-    transform: translate(50px, 0);
-    -webkit-transform: translate(50px, 0);
-    -moz-transform: translate(50px, 0);
-    -ms-transform: translate(50px, 0);
-    -o-transform: translate(50px, 0);
+  from {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
   }
-  20% {
-    -webkit-transform: translate(30px, 0);
-            transform: translate(30px, 0);
-  }
-  40% {
-    -webkit-transform: translate(20px, 0);
-            transform: translate(20px, 0);
-  }
-  60% {
-    -webkit-transform: translate(15px, 0);
-            transform: translate(15px, 0);
-  }
-  80% {
-    -webkit-transform: translate(7px, 0);
-            transform: translate(7px, 0);
-  }
-  100% {
-    -webkit-transform: translate(1px, 0);
-            transform: translate(1px, 0);
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -658,16 +674,6 @@ footer .fas, footer .far {
   margin-right: 15px;
 }
 
-.menu-card:hover .btn-circle {
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-}
-
 .header-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -824,10 +830,9 @@ footer .fas, footer .far {
   display: -ms-flexbox;
   display: flex;
   width: 95%;
-  /*padding: 10px;*/
+  /*padding: 10px;
+    */
   background: #fff;
-  -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
-          box-shadow: 0 5px 15px 0 #c3c3c3;
   border-radius: 10px;
   margin: 10px 5px;
   padding: 10px;
@@ -836,21 +841,19 @@ footer .fas, footer .far {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  animation: plate-choice ease 0.3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-animation: plate-choice ease 0.3s;
-  /* @media only screen and (max-width: 767px) */
-  /*{
+  -webkit-animation: plate-choice ease .6s;
+          animation: plate-choice ease .6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  overflow: hidden;
+  /*@mediaonlyscreenand(max-width: 767px) */
+  /*;
+    -webkit-animation: plate-choice ease .6s;
+{
         margin: 10px;
     }*/
-  overflow: hidden;
+  -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
+          box-shadow: 0 5px 15px 0 #c3c3c3;
 }
 
 .menu-text {
@@ -887,6 +890,7 @@ footer .fas, footer .far {
   font-weight: 700;
   width: 10%;
   padding: 0px 5px;
+  margin-right: -10%;
 }
 
 .menu-description {
@@ -903,14 +907,12 @@ footer .fas, footer .far {
 }
 
 .menu-card:hover .menu-price {
-  animation: menu-confirmation ease 0.3s;
+  -webkit-animation: menu-confirmation ease 0.3s;
+          animation: menu-confirmation ease 0.3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
   min-width: 50px;
   margin-right: 20px;
-  -webkit-animation: menu-confirmation ease 0.3s;
 }
 
 .menu-card:hover .menu-selection {
@@ -932,54 +934,71 @@ footer .fas, footer .far {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  -webkit-animation: menu-selection ease-in 2s;
+          animation: menu-selection ease-in 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  overflow: hidden;
+}
+
+.menu-card:hover .btn-circle {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
 }
 
 .btn-circle {
   color: #ffffff;
 }
 
-.delai-0 {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-
 .delai-1 {
-  -webkit-animation-delay: 0.05s;
-          animation-delay: 0.05s;
+  animation: plate-choice 0.6s;
+  -webkit-animation: plate-choice 0.6s;
 }
 
 .delai-2 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  animation: plate-choice 1.2s;
+  -webkit-animation: plate-choice 1.2s;
 }
 
 .delai-3 {
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
+  animation: plate-choice 1.8s;
+  -webkit-animation: plate-choice 1.8s;
 }
 
 .delai-4 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation: plate-choice 2.4s;
+  -webkit-animation: plate-choice 2.4s;
 }
 
 .delai-5 {
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
+  animation: plate-choice 3s;
+  -webkit-animation: plate-choice 3s;
 }
 
 .delai-6 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation: plate-choice 3.6s;
+  -webkit-animation: plate-choice 3.6s;
 }
 
 .delai-7 {
-  -webkit-animation-delay: 0.35s;
-          animation-delay: 0.35s;
+  animation: plate-choice 4.2s;
+  -webkit-animation: plate-choice 4.2s;
 }
 
 .delai-8 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation: plate-choice 4.8s;
+  -webkit-animation: plate-choice 4.8s;
+}
+
+.delai-9 {
+  animation: plate-choice 5.4s;
+  -webkit-animation: plate-choice 5.4s;
 }
 /*# sourceMappingURL=main.css.map */
