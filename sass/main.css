@@ -42,6 +42,8 @@ p {
 .btn:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#f77dd4), to(#ab65fa));
   background: linear-gradient(#f77dd4, #ab65fa);
+  -webkit-box-shadow: 3px 3px 3px 3px #C3C3C3;
+          box-shadow: 3px 3px 3px 3px #C3C3C3;
 }
 
 section {
@@ -581,32 +583,35 @@ input[type=text]:focus {
   font-size: 40px;
 }
 
-.like #full-heart:hover, .like:hover, .like .fa-heart:hover {
+.like .full-heart:hover, .like:hover, .like .fa-heart:hover {
   -webkit-transition: 0.5s 0s ease;
   transition: 0.5s 0s ease;
 }
 
-.fa-heart, #full-heart {
+.fa-heart, .full-heart {
   position: absolute;
   top: 20px;
   right: 20px;
+  font-size: 24px;
 }
 
 .fa-heart:hover {
   opacity: 0;
 }
 
-#full-heart {
+.full-heart {
   opacity: 0;
 }
 
-#full-heart:hover {
+.full-heart:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(#ff79da, #9356dc);
   opacity: 1;
   z-index: 999;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 .new {
