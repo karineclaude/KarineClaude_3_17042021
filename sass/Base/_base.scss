@@ -4,6 +4,7 @@ body{
     font-family: 'Roboto', sans-serif;
     display: block;
     background-color: $fond;
+    overflow-x: hidden;
 }
 
 a {

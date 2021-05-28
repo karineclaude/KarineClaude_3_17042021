@@ -4,6 +4,7 @@ body {
   font-family: 'Roboto', sans-serif;
   display: block;
   background-color: #f6f6f6;
+  overflow-x: hidden;
 }
 
 a {
@@ -74,7 +75,6 @@ h1 {
 
 @media only screen and (max-width: 767px) {
   .titre-restaurant {
-    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -592,7 +592,7 @@ input[type=text]:focus {
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .fa-heart:hover {
