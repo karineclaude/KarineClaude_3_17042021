@@ -375,8 +375,7 @@ input[type=text]:focus {
   left: 0;
   top: 0;
   background-color: rgba(255, 255, 255, 0.9);
-  -webkit-animation: loader 0.01s;
-          animation: loader 0.01s;
+  animation: loader 0.01s;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
   -webkit-animation-fill-mode: both;
@@ -391,6 +390,7 @@ input[type=text]:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation: loader 0.01s;
 }
 
 .spinner {
@@ -594,6 +594,7 @@ input[type=text]:focus {
   position: absolute;
   color: #008766;
   background-color: #99e2d0;
+  border-radius: .125rem;
   top: 10px;
   right: 20px;
   padding: 10px 15px;
@@ -888,12 +889,12 @@ footer .fas, footer .far {
 }
 
 .menu-card:hover .menu-price {
-  -webkit-animation: menu-confirmation ease 0.3s;
-          animation: menu-confirmation ease 0.3s;
+  animation: menu-confirmation ease 0.3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   min-width: 50px;
   margin-right: 20px;
+  -webkit-animation: menu-confirmation ease 0.3s;
 }
 
 .menu-card:hover .menu-selection {

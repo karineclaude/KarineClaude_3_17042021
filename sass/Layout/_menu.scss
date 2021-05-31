@@ -179,6 +179,7 @@ margin: 0;
     animation-fill-mode:forwards;
     min-width: 50px;
     margin-right: 20px;
+    -webkit-animation: menu-confirmation ease 0.3s;
 }
 
   .menu-card:hover .menu-selection  {
@@ -202,7 +203,6 @@ margin: 0;
 
 
 .menu-card:hover .btn-circle {
-
     transition-duration: 0.5s;
     transform:rotate(360deg);
     -webkit-transform:rotate(360deg);
