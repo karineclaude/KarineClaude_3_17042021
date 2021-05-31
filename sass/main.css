@@ -980,4 +980,9 @@ footer .fas, footer .far {
   animation: plate-choice 5.4s;
   -webkit-animation: plate-choice 5.4s;
 }
+
+.delai-10 {
+  animation: plate-choice 6s;
+  -webkit-animation: plate-choice 6s;
+}
 /*# sourceMappingURL=main.css.map */
